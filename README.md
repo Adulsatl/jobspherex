@@ -25,3 +25,15 @@ Jobspherex is a web platform designed to facilitate job searching, career manage
    ```bash
    git clone https://github.com/Adulsatl/jobspherex.git
    cd jobspherex
+2.Create a virtual environment and activate it:
+   Windows--
+      python -m venv venv
+      venv\Scripts\activate
+   Linux--
+      python3 -m venv venv
+      source venv/bin/activate
+3.Install Dependencies
+   pip install -r requirements.txt
+4.Run Project
+   1)cd project
+   2)python manage.py runserver
