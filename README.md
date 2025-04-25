@@ -17,9 +17,8 @@ Jobspherex is a web platform designed to facilitate job searching, career manage
 - **Database**: SQL (SQLite, MySQL)
 - **Authentication**: Django's built-in authentication system (User management, Login, Registration)
 
-## 📦 Installation
 
-### Clone the Repository
+## Clone the Repository
 
 1. Clone the repository:
    ```bash
@@ -32,8 +31,10 @@ Jobspherex is a web platform designed to facilitate job searching, career manage
    Linux--
       python3 -m venv venv
       source venv/bin/activate
+## 📦 Installation
 3.Install Dependencies
    pip install -r requirements.txt
+
 4.Run Project
    1)cd project
    2)python manage.py runserver
