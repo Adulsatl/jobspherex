@@ -13,26 +13,17 @@ Jobspherex is a web platform designed to facilitate job searching, career manage
 ## 🛠️ Tech Stack
 
 - **Backend**: Django
-- **Frontend**: HTML, CSS ,Bootstrap
+- **Frontend**: HTML, CSS, Bootstrap
 - **Database**: SQL (SQLite, MySQL)
 - **Authentication**: Django's built-in authentication system (User management, Login, Registration)
 
+---
 
-## Clone the Repository
+## 📦 Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Adulsatl/jobspherex.git
-   cd jobspherex
-2.Create a virtual environment and activate it:
-1)Windows--
-   ```bash
-      python -m venv venv
-      venv\Scripts\activate
- 📦 Installation
-3.Install Dependencies
-   pip install -r requirements.txt
+### Step 1: Clone the Repository
 
-4.Run Project
-   1)cd project
-   2)python manage.py runserver
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/Adulsatl/jobspherex.git
+cd jobspherex
