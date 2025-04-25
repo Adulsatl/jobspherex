@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIEWS</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        font-family: 'montserrat';
+        background-image: url('https://i.pinimg.com/originals/00/46/84/0046847bf336510adf9cbed0c2ab9654.jpg');
+        background-repeat: no-repeat;
+        background-size: cover; 
+    } 
+    .navbar li{
+        padding: 10px;
+    }
+    .card{
+        margin: auto;
+        border: 1px solid whitesmoke;
+        box-shadow: 2px 2px 4px;
+    }
+    .container{
+        margin-top: 20px; 
+    }
+</style>
+<body>
+    <div class="container-fuild">
+        <nav class="navbar navbar-expand-sm">
+            <h1 class="text-light">JOBSPHEREX</h1>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                         <li class="nav-item">
+                            <a class="btn btn-success" onclick=history.back()>Go Back</a>
+                         </li>
+                    </ul>
+                </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="card" style="width: fit-content; height: 550px;">
+            <div class="card-body">
+                {% for i in key %}
+                    <h1 class="card-title text-center">{{i.job_details}}</h1>
+                    <p class="card-text">
+                        <strong>COMPANY NAME : </strong> {{i.company_name}}</p>
+                    <p class="card-text">
+                        <strong>JOB DESCRIPTIONS  : </strong> {{i.job_description}}</p>
+                    <p class="card-text">
+                        <strong>SKILLS : </strong> {{i.skills}}</p>
+                    <p class="card-text"> 
+                        <strong>EXPERIENCE</strong> : {{i.experience}}</p>
+                    <p class="card-text">
+                        <strong> JOB TYPE : </strong>  Full time</p>
+                    <p class="card-text">
+                        <strong> SHIFT AND SCHEDULE : </strong>  Day shift</p>
+                    <p class="card-text">
+                        <strong> SUPPLEMENTAL PAY TYPES : </strong>  {{i.pay_types}}</p> 
+                    <p class="card-text">
+                        <strong>QUALIFICATIONS</strong> : {{i.qualification}}</p>
+                    <p class="card-text">
+                        <strong>SALARY</strong> : {{i.salary}}</p>
+                    <p class="card-text">
+                        <strong>EXCEPTED STARTING DATE : </strong>{{i.date}}</p>
+                                <a href="{% url 'uforms' i.id %}">
+                                    <button class="btn btn-outline-success">APPLY NOW</button>
+                                </a>
+                {% endfor %}
+            </div> <br><br>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

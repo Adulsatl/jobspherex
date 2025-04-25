@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant profile</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+      body{
+        font-family:'Montserrat';
+      }
+      .row {
+          margin-top: 100px;
+          border: 1px solid #ee8309;
+          border-radius: 15px;
+          box-shadow: 2px 2px 4px #ee8309;
+          padding: 10px;
+          width: 650px;
+        }
+      .row:hover{
+          box-shadow: 2px 2px 4px #0c0c0c;
+        }
+        .col1-6{
+          margin-top: 50px;
+        }
+        .container{
+        margin-left: 350px;
+        padding: 25px;
+        }
+      .applicant-details h1 {
+          font-size: 36px;
+        }
+      .navbar-nav li{
+          padding: 8px;
+          margin: 8px;
+        } 
+      </style>
+    </head>
+    <body>
+      <div class="container-fuild">
+        <nav class="navbar fixed-top navbar-expand-sm">
+          <h1 class="text-dark">JOBSPHEREX</h1>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item"> 
+                          <a href="udetails"><button type="button" class="btn btn-warning">Applied Jobs</button></a>
+                      </li>
+                      <li class="nav-item"> 
+                          <button class="btn btn-warning" onclick=history.back()>Go Back</button>
+                       </li>
+                  </ul>
+              </div>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="applicant-details">
+          <div class="row ">
+            <div class="col-6">
+              <img class="card-img img-fluid"  src="{{key.u_image.url}}" alt="Card image cap">
+            </div>
+            <div class="col1-6">
+              <strong> Fisrt Name   : </strong>{{key.u_firstname}}</p>
+              <strong> Last Name    :</strong> {{key.u_lastname}}</p>
+              <strong> E-mail       : </strong>{{key.u_email}}</p>
+              <strong> Mobile Number: </strong> {{key.u_number}}</p>
+              <strong> Username     :</strong> {{key.u_username}}</p>
+              <a href="updates">
+                <p class="text-danger">If you need any update in details ?</p>
+              </a> 
+            </div>
+          </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+ <!-- <div class="card">
+              <div class="col-lg-6">
+                <img class="card-img img-fluid"  src="{{key.u_image.url}}" alt="Card image cap">
+              </div>
+              <div class="col-lg-6">
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong> Fisrt Name: </strong>{{key.u_firstname}}</p>
+                  <p class="card-text">
+                    <strong> Last Name :</strong> {{key.u_lastname}}</p>
+                  <p class="card-text">
+                    <strong> E-mail: </strong>{{key.u_email}}</p>
+                  <p class="card-text">
+                    <strong> Mobile Number: </strong> {{key.u_number}}</p>
+                  <p class="card-text">
+                    <strong> Username:</strong> {{key.u_username}}</p>
+                  <p class="card-text">
+                    <strong> Password:</strong> {{key.u_password}}</p>
+                </div> -->
+
+<!-- 
+<div class="btn btn-mx-auto d-block">
+-->
+</div>
+</div> 
+</div>

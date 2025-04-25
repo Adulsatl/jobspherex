@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        font-family: 'montserrat';
+    }
+    .row{
+        border: 1px solid #ee8309;
+        border-radius: 8px;
+        padding: 25px;
+    }
+    .form-group input[type='file']{
+            border: none;
+            border-bottom: 2px solid #ee8309;
+        }
+</style>
+<body>
+    <div class="container-fuild">
+        <nav class="navbar navbar-expand-sm">
+            <h1 class="text-dark">JOBSPHEREX</h1>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                         <li class="nav-item">
+                            <a class="btn btn-warning" onclick=history.back()>Go Back</a>
+                         </li>
+                    </ul>
+                </div>
+        </nav>
+    </div>
+    <div class="container">
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <h1 class="text-center">REGISTERATION FORM</h1>
+                <i><P class="para">Fill up the above form :</P></i>
+            <div class="row">
+                <div class="col-12">
+                    <h2>PERSONAL DETAILS</h2> <hr style="color: #ee8309;">
+                    <div class="form-group">
+                        NAME : <input class="form-control" value="{{key13.u_firstname}}"  type="text"  name="fname" id="" required>
+                    </div>
+                    <div class="form-group">
+                        E-MAIL : <input class="form-control" value="{{key13.u_email}}" disabled type="text" name="" id="" required>
+                                 <input class="form-control" value="{{key13.u_email}}" type="hidden" name="emails" id="" required>
+                    </div>
+                    <div class="form-group">
+                        MOBILE NUMBER :<input class="form-control" value="{{key13.u_number}}"  type="number" name="" id="" required disabled>
+                                        <input class="form-control" value="{{key13.u_number}}" type="hidden" name="numb" id="" required>
+                    </div>
+                    <div class="form-group">
+                        ARE YOU WILLING TO RELOCATE :<input class="form-control" placeholder="Enter yes or no" type="text" name="location" id="" required>
+                    </div>
+                    <div class="form-group">
+                        Your location :<input class="form-control" placeholder="Enter yes or no" type="text" name="u_location" id="" required>
+                    </div>
+                    <div class="form-group">
+                        RESUME : <input type="file" name="resume" id="" required>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="btn btn-mx-auto d-block">
+                        <a href="thks"><input class="btn btn-outline-info" value="SUBMIT" type="submit" name="" id=""></a> 
+                    </div>
+                </div>
+            </div>
+        </form> 
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

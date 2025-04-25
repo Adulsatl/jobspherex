@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'montserrat';
+        background-image: url('https://media.istockphoto.com/id/959769248/photo/multi-colored-abstract-network-background.jpg?b=1&s=170667a&w=0&k=20&c=UJw0wgJ8Y_8W61W6yyiP7OIzXbSjxElRMHHNoRABPKg=');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container{
+        margin-top: 4%;
+        padding: 25px;
+        border: 1px solid white;
+        border-radius: 15px 50px;
+        width: 550px;
+        height: 585px;
+        /* background: linear-gradient(to bottom, #33ccff 0%, #ff9933 100%) */
+        color: white;
+        background-color: black;
+        opacity: 0.8;
+    }
+</style>
+<div>
+    <div class="container-fuild">
+        <nav class="navbar fixed-top navbar-expand-sm">
+            <h1 class="text-white">JOBSPHEREX</h1>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"> 
+                                <button class="btn btn-info" onclick="history.back()">Back</button>
+                        </li>
+                    </ul>
+                </div>     
+        </nav>
+    </div>
+    <div class="container">
+            <form action="" method="post">
+                {% csrf_token %}
+                <h1 class="text-center">FORM</h1>
+                <i><P class="para">Fill up the above form :</P></i>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            Job Details : <input class="form-control" placeholder="Enter your job details" type="text" name="job" id="" required>
+                        </div>
+                        <div class="form-group">
+                            Company Name : <input class="form-control" placeholder="Enter your company name" value="{{key9.c_name}}" disabled type="text" name="" id="" required>
+                                            <input class="form-control" placeholder="Enter your company name" value="{{key9.c_name}}"  type="hidden" name="name" id="" required>
+                        </div>
+                        <div class="form-group">
+                            Skills :<input class="form-control" placeholder="skills" type="text" name="skill" id="" required>
+                        </div>
+                        <div class="form-group">
+                            Job Description :<input class="form-control" placeholder="Description" type="text" name="description" id="" required>
+                        </div> 
+                        <div class="form-group">
+                            Expected Start Date : <input class="form-control" placeholder="Expected Start Date" type="date" name="date" id="" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            Experience : <input class="form-control" placeholder="Experience" type="text" name="exp" id="" required>
+                        </div>
+                        <div class="form-group">
+                            Qualifications : <input class="form-control" placeholder="Qualification" type="text" name="qua" id="" required>
+                        </div>
+                        <div class="form-group">
+                            Benifits : <input class="form-control" placeholder="Benifits" type="text" name="benifit" id="" required>
+                        </div>
+                        <div class="form-group">
+                            Salary : <input class="form-control" placeholder="Salary" type="number" name="sal" id="" required>
+                        </div>
+                        <div class="form-group">
+                            Supplemental pay types : <input class="form-control" placeholder="Supplemental pay types:" type="text" name="pay" id="" required>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="btn btn-mx-auto d-block">
+                            <input class="btn btn-outline-info" value="SUBMIT" type="submit" name="" id="" required>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
